@@ -17,7 +17,7 @@ class MyShell(cmd.Cmd):
         sys.exit(1)
 
     def do_shell(self, line):
-        """Esegue il comando shell di sistema"""
+        """Run commands """
         try:
             subprocess.call(line, timeout=5, shell=True)
         except subprocess.TimeoutExpired:
