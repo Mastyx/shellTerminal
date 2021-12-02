@@ -12,7 +12,7 @@ class MyShell(cmd.Cmd):
         self.namespace = {}
 
     def do_quit(self, line):
-        """ Esce dal programma"""
+        """ Exit Program """
         print("\nGrazie per aver usato MastyxShell !")
         sys.exit(1)
 
